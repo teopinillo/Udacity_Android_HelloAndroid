@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.theofrancisco.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo1"
+        android:src="@drawable/udemy_logo_1"
+        android:layout_width  = "match_parent"
+        android:layout_height = "wrap_content"
+        android:scaleType = "centerCrop"
+        />
+
+    <TextView
+        android:text="Udacity"
+        android:id="@+id/txtUdacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo1"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:gravity="left"
+        android:padding="10dp"/>
+
+    <TextView
+        android:text="2465 Latham St"
+        android:id="@+id/txtAddress"
+        android:layout_below="@id/txtUdacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <TextView
+        android:text="Mountain View, CA 94043"
+        android:id="@+id/txtAddress2"
+        android:layout_below="@id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <TextView
+        android:text="650-555-5555"
+        android:id="@+id/txtPhone"
+        android:layout_below="@id/txtAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <TextView
+        android:text="www.udacity.com"
+        android:id="@+id/txtSite"
+        android:layout_below="@id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:padding="8dp"/>
+
+    <ImageView
+        android:id="@+id/imageLogo2"
+        android:src="@drawable/udemy_logo_2"
+        android:layout_width  = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_below="@id/txtSite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        />
+
+
+</RelativeLayout>
